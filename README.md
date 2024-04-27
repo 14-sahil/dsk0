@@ -63,7 +63,8 @@ dpkg --list | grep -i jdk
 1. Terminal 1
     ```bash
     # complile all the files
-    javac *.java
+    idlj -fall ServiceModule.idl
+    javac *.java ServiceModule/*.java
     # start orbd 
     orbd -ORBInitialPort 1056
     ```

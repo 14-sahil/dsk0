@@ -1,0 +1,5 @@
+module ServiceModule {
+	interface ServiceInterface {
+		boolean isEven(in double num);
+	};
+};
