@@ -1,0 +1,5 @@
+module ServiceModule {
+	interface ServiceInterface {
+		string concat(in string s1, in string s2);
+	};
+};
