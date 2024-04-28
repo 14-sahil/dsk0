@@ -98,5 +98,18 @@ dpkg --list | grep -i jdk
     $MPJ_HOME/bin/mpjrun.sh -np 4 ArrSum
 
     ```
-    <hr>
-    
+<hr>
+
+#### Assignment 4
+1. Terminal 1
+    ```bash
+    python server.py
+    # or 
+    python3 server.py
+    ```
+2. Terminal 2
+    ```bash
+    python client.py
+    #or
+    python3 client.py
+    ```
