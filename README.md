@@ -113,3 +113,14 @@ dpkg --list | grep -i jdk
     #or
     python3 client.py
     ```
+<hr>
+
+#### Assignment 5
+- Terminal 1
+    ```bash
+    # complile the java program
+    javac TokenRing.java
+    # run compiled java program
+    java TokenRing
+    ```
+<hr>

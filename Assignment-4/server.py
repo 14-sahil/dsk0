@@ -35,6 +35,7 @@ class ClockServer:
             except Exception as e:
                 print(f"Error receiving time form {client_address}: {e}")
                 del self.clients[client_address]
+                break
 
     def _sync_clocks(self):
         while True:
