@@ -124,3 +124,16 @@ dpkg --list | grep -i jdk
     java TokenRing
     ```
 <hr>
+
+#### Assignment 6
+- Terminal 1
+    ```bash
+    # compile the java program
+    javac Bully.java
+    javac Ring.java
+    # run compiled java program
+    java Bully
+    java Ring
+    ```
+
+<hr>
