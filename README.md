@@ -137,3 +137,16 @@ dpkg --list | grep -i jdk
     ```
 
 <hr>
+
+#### Download Repo zip without git in terminal
+
+```bash
+# git clone for ubuntu
+git clone https://github.com/b1ink0/SPPU-BE-IT-DS.git
+
+# in cmd
+curl -L -o SPPU-BE-IT-DS-main.zip https://github.com/b1ink0/SPPU-BE-IT-DS/archive/refs/heads/main.zip
+
+# or in powershell
+Invoke-WebRequest -Uri "https://github.com/b1ink0/SPPU-BE-IT-DS/archive/refs/heads/main.zip" -OutFile "SPPU-BE-IT-DS-main.zip"
+```
