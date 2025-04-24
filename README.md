@@ -96,6 +96,18 @@ dpkg --list | grep -i jdk
     javac -cp $MPJ_HOME/lib/mpj.jar ArrSum.java
     # run compiled java program
     $MPJ_HOME/bin/mpjrun.sh -np 4 ArrSum
+{example
+
+vm1@vm1-VirtualBox:~/Downloads$ cd /home && ls
+vm1
+vm1@vm1-VirtualBox:/home$ export MPJ_HOME=/home/{ubuntu_username}/Downloads/mpj-v0_44
+vm1@vm1-VirtualBox:/home$ export MPJ_HOME=/home/vm1/Downloads/mpj-v0_44
+vm1@vm1-VirtualBox:/home$ export PATH=$MPJ_HOME/bin:$PATH
+vm1@vm1-VirtualBox:/home$ javac -cp $MPJ_HOME/lib/mpj.jar /home/vm1/Downloads/BE-IT-DS-main/Assign3/ArrSum.java
+vm1@vm1-VirtualBox:/home$ $MPJ_HOME/bin/mpjrun.sh -np 4 -cp /home/vm1/Downloads/BE-IT-DS-main/Assign3 ArrSum
+
+
+}
 
     ```
 <hr>
