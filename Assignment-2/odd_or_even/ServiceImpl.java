@@ -6,4 +6,16 @@ public class ServiceImpl extends ServiceInterfacePOA {
 		System.out.println("At Server: isEven(" + num + ") = " + (result ? "Yes" : "No"));
 		return result;
 	}
+
+	public double square(double num) {
+		double result = num * num;
+		System.out.println("At Server: square(" + num + ") = " + result);
+		return result;
+	}
+
+	public double squareRoot(double num) {
+		double result = Math.sqrt(num);
+		System.out.println("At Server: squareRoot(" + num + ") = " + result);
+		return result;
+	}
 }
