@@ -14,11 +14,19 @@ public class ServiceClient {
 			ServiceInterface service = ServiceInterfaceHelper.narrow(ncRef.resolve_str(name));
 
 			Scanner scanner = new Scanner(System.in);
+		
 			System.out.println("Enter a number: ");
 			double num = scanner.nextDouble();
 
 			boolean result = service.isEven(num);
 			System.out.println("At Client: isEven(" + num + ") = " + (result ? "Yes" : "No"));
+
+			double sq = service.square(num);
+			System.out.println("At Client: square(" + num + ") = " + sq);
+
+			double sqrt = service.squareRoot(num);
+			System.out.println("At Client: squareRoot(" + num + ") = " + sqrt);
+
 
 			scanner.close();
 			orb.shutdown(true);
