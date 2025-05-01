@@ -1,5 +1,7 @@
 module ServiceModule {
 	interface ServiceInterface {
-		boolean isEven(in double num);
+		boolean isEven(double num);
+		double square(double num);
+		double squareRoot(double num);
 	};
 };
