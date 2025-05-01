@@ -22,6 +22,16 @@ public class ServiceClient {
 			String result = service.concat(s1, s2);
 			System.out.println("At Client: concat(" + s1 + "," + s2 + ") = " + result);
 
+
+
+			System.out.print("Enter a string to check for palindrome: ");
+			String palindromeInput = scanner.nextLine();
+
+			boolean isPalin = service.isPalindrome(palindromeInput);
+			
+			System.out.println("At Client: isPalindrome(" + palindromeInput + ") = " + (isPalin ? "Yes" : "No"));
+
+
 			scanner.close();
 			orb.shutdown(true);
 		} catch (Exception e) {
