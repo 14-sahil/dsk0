@@ -48,7 +48,10 @@ public class ArrSum {
 				total_sum += gather_buffer[i];
 			}
 			System.out.println("Final Sum: " + total_sum);
+			double average = (double) total_sum / total_elements;
+    			System.out.println("Average Marks: " + average);
 		}
+		
 		
 		MPI.Finalize();
 	}
