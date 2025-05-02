@@ -1,4 +1,6 @@
 # SPPU-BE-IT-DS
+👉 [Notes](https://chatgpt.com/share/68111485-6db4-8004-913f-ae428056359d)
+
 #### Assignment 1
 1. Terminal 1
     ```bash
