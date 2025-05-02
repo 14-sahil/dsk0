@@ -1,5 +1,6 @@
 # SPPU-BE-IT-DS
-👉 [Notes](https://chatgpt.com/share/68111485-6db4-8004-913f-ae428056359d)
+👉 [Notes:Q&A](https://chatgpt.com/share/68111485-6db4-8004-913f-ae428056359d)
+ [Notes:CODES](https://chatgpt.com/share/6815117a-1c90-8004-a4a9-aff285206cbd)
 
 #### Assignment 1
 1. Terminal 1
