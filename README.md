@@ -1,3 +1,75 @@
+
+   
+
+
+//assign-3
+
+       pragma solidity ^0.8.17;
+
+     contract ArrayandFunctions {
+
+     string public String="hello";
+
+      uint[] Array = [4, 8, 16];
+
+    function PrintArray() public view returns (uint[] memory) {
+        return Array;
+    }
+
+    function push(uint i) public {
+        Array.push(i);
+    }
+
+    function pop() public {
+        Array.pop();
+    }
+
+    function PrintLength() public view returns (uint) {
+        return Array.length;
+    }
+    }
+
+
+ //assign-5
+ 
+      pragma solidity ^0.8.17;
+      contract Voting{
+      struct Candidate{
+      uint id;
+      string name;
+      uint voteCount;
+      }
+      mapping (uint => Candidate) public candidates;
+      uint public candidatecount;
+      mapping (address => bool) public citizen;
+      string public winner;
+      constructor() {
+      addCandidate("BJP");
+      addCandidate("Congress");
+      }
+      function addCandidate (string memory _name) private{
+      candidatecount++;
+      candidates [candidatecount] = Candidate (candidatecount, _name, 0);
+      }
+      function vote(uint _candidateid) public{
+      require(!citizen[msg.sender]);
+      citizen[msg.sender] = true;
+      candidates[_candidateid].voteCount ++;
+     }
+     function Winnerpoll() public{
+     if(candidates[1].voteCount>candidates [2].voteCount){
+     winner=candidates[1].name;
+     }
+     else{
+     winner=candidates[2].name;
+     }
+     }
+     }
+
+
+
+
+
 # SPPU-BE-IT-DS
 👉 [Notes:Q&A](https://chatgpt.com/share/68111485-6db4-8004-913f-ae428056359d)
  [Notes:CODES](https://chatgpt.com/share/6815117a-1c90-8004-a4a9-aff285206cbd)
